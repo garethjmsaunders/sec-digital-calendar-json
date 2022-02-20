@@ -1,0 +1,682 @@
+<?xml version="1.0" ?>
+<root>
+    <key name="$schema">http://json-schema.org/draft-07/schema</key>
+    <key name="$id">http://example.com/example.json</key>
+    <type>object</type>
+    <title>The root schema</title>
+    <description>The root schema comprises the entire JSON document.</description>
+    <default/>
+    <examples>
+        <item>
+            <year>A</year>
+            <daily-year>1</daily-year>
+            <type>BLANK</type>
+            <week>LITURGICAL_WEEK</week>
+            <fixed-date/>
+            <day-of-week>Sunday|Monday|Tuesday|etc</day-of-week>
+            <day-name>NAME</day-name>
+            <class>1</class>
+            <colour>COLOUR</colour>
+            <spb-week/>
+            <spb-colour/>
+            <rubric/>
+            <used-if-before-lent>False</used-if-before-lent>
+            <used-if-after-pentecost>False</used-if-after-pentecost>
+            <rogation-day>False</rogation-day>
+            <eve-of/>
+            <sunday-before/>
+            <eucharist>
+                <item>
+                    <continuous>
+                        <item>
+                            <rubric/>
+                            <ot>READING</ot>
+                            <psalm>READING</psalm>
+                            <epistle>READING</epistle>
+                            <gospel>READING</gospel>
+                        </item>
+                    </continuous>
+                    <thematic/>
+                    <special/>
+                </item>
+            </eucharist>
+            <daily-prayer>
+                <item>
+                    <morning/>
+                    <evening/>
+                    <both>
+                        <item>
+                            <rubric/>
+                            <season>SEASON</season>
+                            <ot>READING</ot>
+                            <nt>READING</nt>
+                            <gospel>READING</gospel>
+                        </item>
+                    </both>
+                </item>
+            </daily-prayer>
+            <alt-psalms>
+                <item>
+                    <morning>READING</morning>
+                    <evening>READING</evening>
+                </item>
+            </alt-psalms>
+        </item>
+    </examples>
+    <required>
+        <item>year</item>
+        <item>daily-year</item>
+        <item>type</item>
+        <item>week</item>
+        <item>fixed-date</item>
+        <item>day-of-week</item>
+        <item>day-name</item>
+        <item>class</item>
+        <item>colour</item>
+        <item>spb-week</item>
+        <item>spb-colour</item>
+        <item>rubric</item>
+        <item>used-if-before-lent</item>
+        <item>used-if-after-pentecost</item>
+        <item>rogation-day</item>
+        <item>eve-of</item>
+        <item>sunday-before</item>
+        <item>eucharist</item>
+        <item>daily-prayer</item>
+        <item>alt-psalms</item>
+    </required>
+    <properties>
+        <year>
+            <key name="$id">#/properties/year</key>
+            <type>string</type>
+            <title>The year schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default/>
+            <examples>
+                <item>A</item>
+            </examples>
+        </year>
+        <daily-year>
+            <key name="$id">#/properties/daily-year</key>
+            <type>integer</type>
+            <title>The daily-year schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default>0</default>
+            <examples>
+                <item>1</item>
+            </examples>
+        </daily-year>
+        <type>
+            <key name="$id">#/properties/type</key>
+            <type>string</type>
+            <title>The type schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default/>
+            <examples>
+                <item>BLANK</item>
+            </examples>
+        </type>
+        <week>
+            <key name="$id">#/properties/week</key>
+            <type>string</type>
+            <title>The week schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default/>
+            <examples>
+                <item>LITURGICAL_WEEK</item>
+            </examples>
+        </week>
+        <fixed-date>
+            <key name="$id">#/properties/fixed-date</key>
+            <type>null</type>
+            <title>The fixed-date schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default/>
+            <examples>
+                <item/>
+            </examples>
+        </fixed-date>
+        <day-of-week>
+            <key name="$id">#/properties/day-of-week</key>
+            <type>string</type>
+            <title>The day-of-week schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default/>
+            <examples>
+                <item>Sunday|Monday|Tuesday|etc</item>
+            </examples>
+        </day-of-week>
+        <day-name>
+            <key name="$id">#/properties/day-name</key>
+            <type>string</type>
+            <title>The day-name schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default/>
+            <examples>
+                <item>NAME</item>
+            </examples>
+        </day-name>
+        <class>
+            <key name="$id">#/properties/class</key>
+            <type>integer</type>
+            <title>The class schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default>0</default>
+            <examples>
+                <item>1</item>
+            </examples>
+        </class>
+        <colour>
+            <key name="$id">#/properties/colour</key>
+            <type>string</type>
+            <title>The colour schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default/>
+            <examples>
+                <item>COLOUR</item>
+            </examples>
+        </colour>
+        <spb-week>
+            <key name="$id">#/properties/spb-week</key>
+            <type>null</type>
+            <title>The spb-week schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default/>
+            <examples>
+                <item/>
+            </examples>
+        </spb-week>
+        <spb-colour>
+            <key name="$id">#/properties/spb-colour</key>
+            <type>null</type>
+            <title>The spb-colour schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default/>
+            <examples>
+                <item/>
+            </examples>
+        </spb-colour>
+        <rubric>
+            <key name="$id">#/properties/rubric</key>
+            <type>null</type>
+            <title>The rubric schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default/>
+            <examples>
+                <item/>
+            </examples>
+        </rubric>
+        <used-if-before-lent>
+            <key name="$id">#/properties/used-if-before-lent</key>
+            <type>boolean</type>
+            <title>The used-if-before-lent schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default>False</default>
+            <examples>
+                <item>False</item>
+            </examples>
+        </used-if-before-lent>
+        <used-if-after-pentecost>
+            <key name="$id">#/properties/used-if-after-pentecost</key>
+            <type>boolean</type>
+            <title>The used-if-after-pentecost schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default>False</default>
+            <examples>
+                <item>False</item>
+            </examples>
+        </used-if-after-pentecost>
+        <rogation-day>
+            <key name="$id">#/properties/rogation-day</key>
+            <type>boolean</type>
+            <title>The rogation-day schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default>False</default>
+            <examples>
+                <item>False</item>
+            </examples>
+        </rogation-day>
+        <eve-of>
+            <key name="$id">#/properties/eve-of</key>
+            <type>null</type>
+            <title>The eve-of schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default/>
+            <examples>
+                <item/>
+            </examples>
+        </eve-of>
+        <sunday-before>
+            <key name="$id">#/properties/sunday-before</key>
+            <type>null</type>
+            <title>The sunday-before schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default/>
+            <examples>
+                <item/>
+            </examples>
+        </sunday-before>
+        <eucharist>
+            <key name="$id">#/properties/eucharist</key>
+            <type>array</type>
+            <title>The eucharist schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default/>
+            <examples>
+                <item>
+                    <item>
+                        <continuous>
+                            <item>
+                                <rubric/>
+                                <ot>READING</ot>
+                                <psalm>READING</psalm>
+                                <epistle>READING</epistle>
+                                <gospel>READING</gospel>
+                            </item>
+                        </continuous>
+                        <thematic/>
+                        <special/>
+                    </item>
+                </item>
+            </examples>
+            <additionalItems>True</additionalItems>
+            <items>
+                <key name="$id">#/properties/eucharist/items</key>
+                <anyOf>
+                    <item>
+                        <key name="$id">#/properties/eucharist/items/anyOf/0</key>
+                        <type>object</type>
+                        <title>The first anyOf schema</title>
+                        <description>An explanation about the purpose of this instance.</description>
+                        <default/>
+                        <examples>
+                            <item>
+                                <continuous>
+                                    <item>
+                                        <rubric/>
+                                        <ot>READING</ot>
+                                        <psalm>READING</psalm>
+                                        <epistle>READING</epistle>
+                                        <gospel>READING</gospel>
+                                    </item>
+                                </continuous>
+                                <thematic/>
+                                <special/>
+                            </item>
+                        </examples>
+                        <required>
+                            <item>continuous</item>
+                            <item>thematic</item>
+                            <item>special</item>
+                        </required>
+                        <properties>
+                            <continuous>
+                                <key name="$id">#/properties/eucharist/items/anyOf/0/properties/continuous</key>
+                                <type>array</type>
+                                <title>The continuous schema</title>
+                                <description>An explanation about the purpose of this instance.</description>
+                                <default/>
+                                <examples>
+                                    <item>
+                                        <item>
+                                            <rubric/>
+                                            <ot>READING</ot>
+                                            <psalm>READING</psalm>
+                                            <epistle>READING</epistle>
+                                            <gospel>READING</gospel>
+                                        </item>
+                                    </item>
+                                </examples>
+                                <additionalItems>True</additionalItems>
+                                <items>
+                                    <key name="$id">#/properties/eucharist/items/anyOf/0/properties/continuous/items</key>
+                                    <anyOf>
+                                        <item>
+                                            <key name="$id">#/properties/eucharist/items/anyOf/0/properties/continuous/items/anyOf/0</key>
+                                            <type>object</type>
+                                            <title>The first anyOf schema</title>
+                                            <description>An explanation about the purpose of this instance.</description>
+                                            <default/>
+                                            <examples>
+                                                <item>
+                                                    <rubric/>
+                                                    <ot>READING</ot>
+                                                    <psalm>READING</psalm>
+                                                    <epistle>READING</epistle>
+                                                    <gospel>READING</gospel>
+                                                </item>
+                                            </examples>
+                                            <required>
+                                                <item>rubric</item>
+                                                <item>ot</item>
+                                                <item>psalm</item>
+                                                <item>epistle</item>
+                                                <item>gospel</item>
+                                            </required>
+                                            <properties>
+                                                <rubric>
+                                                    <key name="$id">#/properties/eucharist/items/anyOf/0/properties/continuous/items/anyOf/0/properties/rubric</key>
+                                                    <type>null</type>
+                                                    <title>The rubric schema</title>
+                                                    <description>An explanation about the purpose of this instance.</description>
+                                                    <default/>
+                                                    <examples>
+                                                        <item/>
+                                                    </examples>
+                                                </rubric>
+                                                <ot>
+                                                    <key name="$id">#/properties/eucharist/items/anyOf/0/properties/continuous/items/anyOf/0/properties/ot</key>
+                                                    <type>string</type>
+                                                    <title>The ot schema</title>
+                                                    <description>An explanation about the purpose of this instance.</description>
+                                                    <default/>
+                                                    <examples>
+                                                        <item>READING</item>
+                                                    </examples>
+                                                </ot>
+                                                <psalm>
+                                                    <key name="$id">#/properties/eucharist/items/anyOf/0/properties/continuous/items/anyOf/0/properties/psalm</key>
+                                                    <type>string</type>
+                                                    <title>The psalm schema</title>
+                                                    <description>An explanation about the purpose of this instance.</description>
+                                                    <default/>
+                                                    <examples>
+                                                        <item>READING</item>
+                                                    </examples>
+                                                </psalm>
+                                                <epistle>
+                                                    <key name="$id">#/properties/eucharist/items/anyOf/0/properties/continuous/items/anyOf/0/properties/epistle</key>
+                                                    <type>string</type>
+                                                    <title>The epistle schema</title>
+                                                    <description>An explanation about the purpose of this instance.</description>
+                                                    <default/>
+                                                    <examples>
+                                                        <item>READING</item>
+                                                    </examples>
+                                                </epistle>
+                                                <gospel>
+                                                    <key name="$id">#/properties/eucharist/items/anyOf/0/properties/continuous/items/anyOf/0/properties/gospel</key>
+                                                    <type>string</type>
+                                                    <title>The gospel schema</title>
+                                                    <description>An explanation about the purpose of this instance.</description>
+                                                    <default/>
+                                                    <examples>
+                                                        <item>READING</item>
+                                                    </examples>
+                                                </gospel>
+                                            </properties>
+                                            <additionalProperties>True</additionalProperties>
+                                        </item>
+                                    </anyOf>
+                                </items>
+                            </continuous>
+                            <thematic>
+                                <key name="$id">#/properties/eucharist/items/anyOf/0/properties/thematic</key>
+                                <type>null</type>
+                                <title>The thematic schema</title>
+                                <description>An explanation about the purpose of this instance.</description>
+                                <default/>
+                                <examples>
+                                    <item/>
+                                </examples>
+                            </thematic>
+                            <special>
+                                <key name="$id">#/properties/eucharist/items/anyOf/0/properties/special</key>
+                                <type>null</type>
+                                <title>The special schema</title>
+                                <description>An explanation about the purpose of this instance.</description>
+                                <default/>
+                                <examples>
+                                    <item/>
+                                </examples>
+                            </special>
+                        </properties>
+                        <additionalProperties>True</additionalProperties>
+                    </item>
+                </anyOf>
+            </items>
+        </eucharist>
+        <daily-prayer>
+            <key name="$id">#/properties/daily-prayer</key>
+            <type>array</type>
+            <title>The daily-prayer schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default/>
+            <examples>
+                <item>
+                    <item>
+                        <morning/>
+                        <evening/>
+                        <both>
+                            <item>
+                                <rubric/>
+                                <season>SEASON</season>
+                                <ot>READING</ot>
+                                <nt>READING</nt>
+                                <gospel>READING</gospel>
+                            </item>
+                        </both>
+                    </item>
+                </item>
+            </examples>
+            <additionalItems>True</additionalItems>
+            <items>
+                <key name="$id">#/properties/daily-prayer/items</key>
+                <anyOf>
+                    <item>
+                        <key name="$id">#/properties/daily-prayer/items/anyOf/0</key>
+                        <type>object</type>
+                        <title>The first anyOf schema</title>
+                        <description>An explanation about the purpose of this instance.</description>
+                        <default/>
+                        <examples>
+                            <item>
+                                <morning/>
+                                <evening/>
+                                <both>
+                                    <item>
+                                        <rubric/>
+                                        <season>SEASON</season>
+                                        <ot>READING</ot>
+                                        <nt>READING</nt>
+                                        <gospel>READING</gospel>
+                                    </item>
+                                </both>
+                            </item>
+                        </examples>
+                        <required>
+                            <item>morning</item>
+                            <item>evening</item>
+                            <item>both</item>
+                        </required>
+                        <properties>
+                            <morning>
+                                <key name="$id">#/properties/daily-prayer/items/anyOf/0/properties/morning</key>
+                                <type>null</type>
+                                <title>The morning schema</title>
+                                <description>An explanation about the purpose of this instance.</description>
+                                <default/>
+                                <examples>
+                                    <item/>
+                                </examples>
+                            </morning>
+                            <evening>
+                                <key name="$id">#/properties/daily-prayer/items/anyOf/0/properties/evening</key>
+                                <type>null</type>
+                                <title>The evening schema</title>
+                                <description>An explanation about the purpose of this instance.</description>
+                                <default/>
+                                <examples>
+                                    <item/>
+                                </examples>
+                            </evening>
+                            <both>
+                                <key name="$id">#/properties/daily-prayer/items/anyOf/0/properties/both</key>
+                                <type>array</type>
+                                <title>The both schema</title>
+                                <description>An explanation about the purpose of this instance.</description>
+                                <default/>
+                                <examples>
+                                    <item>
+                                        <item>
+                                            <rubric/>
+                                            <season>SEASON</season>
+                                            <ot>READING</ot>
+                                            <nt>READING</nt>
+                                            <gospel>READING</gospel>
+                                        </item>
+                                    </item>
+                                </examples>
+                                <additionalItems>True</additionalItems>
+                                <items>
+                                    <key name="$id">#/properties/daily-prayer/items/anyOf/0/properties/both/items</key>
+                                    <anyOf>
+                                        <item>
+                                            <key name="$id">#/properties/daily-prayer/items/anyOf/0/properties/both/items/anyOf/0</key>
+                                            <type>object</type>
+                                            <title>The first anyOf schema</title>
+                                            <description>An explanation about the purpose of this instance.</description>
+                                            <default/>
+                                            <examples>
+                                                <item>
+                                                    <rubric/>
+                                                    <season>SEASON</season>
+                                                    <ot>READING</ot>
+                                                    <nt>READING</nt>
+                                                    <gospel>READING</gospel>
+                                                </item>
+                                            </examples>
+                                            <required>
+                                                <item>rubric</item>
+                                                <item>season</item>
+                                                <item>ot</item>
+                                                <item>nt</item>
+                                                <item>gospel</item>
+                                            </required>
+                                            <properties>
+                                                <rubric>
+                                                    <key name="$id">#/properties/daily-prayer/items/anyOf/0/properties/both/items/anyOf/0/properties/rubric</key>
+                                                    <type>null</type>
+                                                    <title>The rubric schema</title>
+                                                    <description>An explanation about the purpose of this instance.</description>
+                                                    <default/>
+                                                    <examples>
+                                                        <item/>
+                                                    </examples>
+                                                </rubric>
+                                                <season>
+                                                    <key name="$id">#/properties/daily-prayer/items/anyOf/0/properties/both/items/anyOf/0/properties/season</key>
+                                                    <type>string</type>
+                                                    <title>The season schema</title>
+                                                    <description>An explanation about the purpose of this instance.</description>
+                                                    <default/>
+                                                    <examples>
+                                                        <item>SEASON</item>
+                                                    </examples>
+                                                </season>
+                                                <ot>
+                                                    <key name="$id">#/properties/daily-prayer/items/anyOf/0/properties/both/items/anyOf/0/properties/ot</key>
+                                                    <type>string</type>
+                                                    <title>The ot schema</title>
+                                                    <description>An explanation about the purpose of this instance.</description>
+                                                    <default/>
+                                                    <examples>
+                                                        <item>READING</item>
+                                                    </examples>
+                                                </ot>
+                                                <nt>
+                                                    <key name="$id">#/properties/daily-prayer/items/anyOf/0/properties/both/items/anyOf/0/properties/nt</key>
+                                                    <type>string</type>
+                                                    <title>The nt schema</title>
+                                                    <description>An explanation about the purpose of this instance.</description>
+                                                    <default/>
+                                                    <examples>
+                                                        <item>READING</item>
+                                                    </examples>
+                                                </nt>
+                                                <gospel>
+                                                    <key name="$id">#/properties/daily-prayer/items/anyOf/0/properties/both/items/anyOf/0/properties/gospel</key>
+                                                    <type>string</type>
+                                                    <title>The gospel schema</title>
+                                                    <description>An explanation about the purpose of this instance.</description>
+                                                    <default/>
+                                                    <examples>
+                                                        <item>READING</item>
+                                                    </examples>
+                                                </gospel>
+                                            </properties>
+                                            <additionalProperties>True</additionalProperties>
+                                        </item>
+                                    </anyOf>
+                                </items>
+                            </both>
+                        </properties>
+                        <additionalProperties>True</additionalProperties>
+                    </item>
+                </anyOf>
+            </items>
+        </daily-prayer>
+        <alt-psalms>
+            <key name="$id">#/properties/alt-psalms</key>
+            <type>array</type>
+            <title>The alt-psalms schema</title>
+            <description>An explanation about the purpose of this instance.</description>
+            <default/>
+            <examples>
+                <item>
+                    <item>
+                        <morning>READING</morning>
+                        <evening>READING</evening>
+                    </item>
+                </item>
+            </examples>
+            <additionalItems>True</additionalItems>
+            <items>
+                <key name="$id">#/properties/alt-psalms/items</key>
+                <anyOf>
+                    <item>
+                        <key name="$id">#/properties/alt-psalms/items/anyOf/0</key>
+                        <type>object</type>
+                        <title>The first anyOf schema</title>
+                        <description>An explanation about the purpose of this instance.</description>
+                        <default/>
+                        <examples>
+                            <item>
+                                <morning>READING</morning>
+                                <evening>READING</evening>
+                            </item>
+                        </examples>
+                        <required>
+                            <item>morning</item>
+                            <item>evening</item>
+                        </required>
+                        <properties>
+                            <morning>
+                                <key name="$id">#/properties/alt-psalms/items/anyOf/0/properties/morning</key>
+                                <type>string</type>
+                                <title>The morning schema</title>
+                                <description>An explanation about the purpose of this instance.</description>
+                                <default/>
+                                <examples>
+                                    <item>READING</item>
+                                </examples>
+                            </morning>
+                            <evening>
+                                <key name="$id">#/properties/alt-psalms/items/anyOf/0/properties/evening</key>
+                                <type>string</type>
+                                <title>The evening schema</title>
+                                <description>An explanation about the purpose of this instance.</description>
+                                <default/>
+                                <examples>
+                                    <item>READING</item>
+                                </examples>
+                            </evening>
+                        </properties>
+                        <additionalProperties>True</additionalProperties>
+                    </item>
+                </anyOf>
+            </items>
+        </alt-psalms>
+    </properties>
+    <additionalProperties>True</additionalProperties>
+</root>

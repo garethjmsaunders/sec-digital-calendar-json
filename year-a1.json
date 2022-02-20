@@ -1,0 +1,465 @@
+{
+	"@context": {
+		"year": "A",
+		"daily-year": 1
+	},
+
+	"@details": [
+
+{
+	"year": "A",
+	"daily-year": 1,
+	"type": "BLANK",
+
+	"week": "LITURGICAL_WEEK",
+	"fixed-date": null,
+	"day-of-week": "Sunday|Monday|Tuesday|etc",
+	"day-name": "NAME",
+	"class": 1,
+	"colour": "COLOUR",
+
+	"spb-week": null,
+	"spb-colour": null,
+
+	"rubric": null,
+	"used-if-before-lent": false,
+	"used-if-after-pentecost": false,
+	"rogation-day": false,
+	"eve-of": null,
+	"sunday-before": null,
+
+	"eucharist": [{
+		"continuous": [{
+			"rubric": null,
+			"ot": "READING",
+			"psalm": "READING",
+			"epistle": "READING",
+			"gospel": "READING"
+		}],
+		"thematic": null,
+		"special": null
+	}],
+
+	"daily-prayer": [{
+		"morning": null,
+		"evening": null,
+		"both": [{
+			"rubric": null,
+			"season": "SEASON",
+			"ot": "READING",
+			"nt": "READING",
+			"gospel": "READING"
+		}]
+	}],
+
+	"alt-psalms": [{
+		"morning": "READING",
+		"evening": "READING"
+	}]
+},
+
+{
+	"year": "A",
+	"daily-year": 1,
+	"type": "sunday",
+
+	"week": "Week of Advent 1",
+	"fixed-date": null,
+	"day-of-week": "Sunday",
+	"day-name": "First Sunday of Advent",
+	"class": 1,
+	"colour": "Violet",
+
+	"spb-week": null,
+	"spb-colour": null,
+
+	"rubric": null,
+	"used-if-before-lent": false,
+	"used-if-after-pentecost": false,
+	"rogation-day": false,
+	"eve-of": null,
+	"sunday-before": null,
+
+	"eucharist": [{
+		"continuous": [{
+			"rubric": null,
+			"ot": "Isaiah 2:1-5",
+			"psalm": "Psalm 122",
+			"epistle": "Romans 13:11-14",
+			"gospel": "Matthew 24:36-44"
+		}],
+		"thematic": null,
+		"special": null		
+	}],
+
+	"daily-prayer": [{
+		"morning": null,
+		"evening": null,
+		"both": [{
+			"rubric": null,
+			"season": "Anticipation",
+			"ot": "Isaiah 52:1-12",
+			"nt": "Revelation 14:13 - 15:4",
+			"gospel": "Matthew 24:15-18"
+		}]
+	}],
+
+	"alt-psalms": [{
+		"morning": "Psalm 9",
+		"evening": "Psalm 25"
+	}]
+},
+
+{
+	"year": "A",
+	"daily-year": 1,
+	"type": "weekday",
+
+	"week": "Week of Advent 1",
+	"fixed-date": null,
+	"day-of-week": "Monday",
+	"day-name": "Monday after First Sunday of Advent",
+	"class": 0,
+	"colour": "Violet",
+
+	"spb-week": null,
+	"spb-colour": null,
+
+	"rubric": null,
+	"used-if-before-lent": false,
+	"used-if-after-pentecost": false,
+	"rogation-day": false,
+	"eve-of": null,
+	"sunday-before": null,
+
+	"eucharist": [{
+		"ot": "Isaiah 4:2-6",
+		"psalm": "Psalm 122",
+		"epistle": null,
+		"gospel": "Matthew 8:5-13"
+	}],
+
+	"daily-prayer": [{
+		"morning": null,
+		"evening": null,
+		"both": [{
+			"rubric": null,
+			"season": "Anticipation",
+			"ot": "Isaiah 1:1-20",
+			"nt": "1 Thessalonians 1:1-10",
+			"gospel": "Luke 20:1-8"
+		}]
+	}],
+
+	"alt-psalms": null
+},
+
+
+{
+	"year": "A",
+	"daily-year": 1,
+	"type": "sunday",
+
+	"week": "Holy Week (Week of Lent 6)",
+	"fixed-date": null,
+	"day-of-week": "Sunday",
+	"day-name": "The Sunday of the Passion (Palm Sunday)",
+	"class": 1,
+	"colour": "Red or Violet",
+
+	"spb-week": null,
+	"spb-colour": null,
+
+	"rubric": null,
+	"used-if-before-lent": false,
+	"used-if-after-pentecost": false,
+	"rogation-day": false,
+	"eve-of": null,
+	"sunday-before": null,
+
+	"eucharist": [{
+		"continuous": [{
+			"rubric": null,
+			"ot": "",
+			"psalm": "",
+			"epistle": "",
+			"gospel": ""
+		}],
+		"thematic": null,
+		"special": [{
+			"palm-sunday": [
+				{
+					"service": "Liturgy of the Palms",
+					"gospel": "Matthew 21:1-11",
+					"psalm": "Psalm 118:1-2, 19-29"
+				},
+				{
+					"service": "Liturgy of the Passion",
+					"ot": "Isaiah 50:4-9a",
+					"psalm": "Psalm 31:9-16",
+					"epistle": "Philippians 2:5-11",
+					"gospel": "Matthew 26:14 - 27:66 or Matthew 27:11-54"
+				}
+			]
+		}]
+	}],
+
+	"daily-prayer": [{
+		"morning": [{
+			"rubric": null,
+			"season": "The Suffering Christ ",
+			"ot": "Zechariah 9:9-12",
+			"nt": "1 Timothy 6:12-16",
+			"gospel": null
+		}],
+		"evening": [{
+			"rubric": null,
+			"season": "The Suffering Christ ",
+			"ot": "Zechariah 12:9-11; 13:1, 7-9",
+			"nt": null,
+			"gospel": "Matthew 21:12-17"
+		}],
+		"both": null
+	}],
+
+	"alt-psalms": null
+},
+
+{
+	"year": "A",
+	"daily-year": 1,
+	"type": "weekday",
+
+	"week": "Holy Week (Week of Lent 6)",
+	"fixed-date": null,
+	"day-of-week": "Friday",
+	"day-name": "Good Friday",
+	"class": 1,
+	"colour": "Red for the Liturgy; Hangings removed",
+
+	"spb-week": null,
+	"spb-colour": null,
+
+	"rubric": null,
+	"used-if-before-lent": false,
+	"used-if-after-pentecost": false,
+	"rogation-day": false,
+	"eve-of": null,
+	"sunday-before": null,
+
+	"eucharist": [{
+		"rubric": "Holy Communion",
+		"ot": "Isaiah 52:13 - 53:12",
+		"psalm": "Psalm 22",
+		"epistle": "Hebrews 10:16-25 or Hebrews 4:14-16; 5:7-9",
+		"gospel": "John 18:1 - 19:42"
+	}],
+
+	"daily-prayer": [{
+		"morning": [{
+			"rubric": null,
+			"season": "The Suffering Christ ",
+			"ot": "Wisdom of Solomon 1:16 - 2:1, 12-22 or Genesis 22:1-14",
+			"nt": "1 Peter 1:10-20",
+			"gospel": "John 13:36-38"
+		}],
+		"evening": [{
+			"rubric": null,
+			"season": "The Suffering Christ ",
+			"ot": "Wisdom of Solomon 1:16 - 2:1, 12-22 or Genesis 22:1-14",
+			"nt": "1 Peter 1:10-20",
+			"gospel": "John 19:38-42"
+		}],
+		"both": null
+	}],
+
+	"alt-psalms": null
+},
+
+{
+	"year": "A",
+	"daily-year": 1,
+	"type": "weekday",
+
+	"week": "Holy Week (Week of Lent 6)",
+	"fixed-date": null,
+	"day-of-week": "Saturday",
+	"day-name": "Holy Saturday (Easter Eve)",
+	"class": 1,
+	"colour": "Hangings removed; White at the Easter Vigil",
+
+	"spb-week": null,
+	"spb-colour": null,
+
+	"rubric": null,
+	"used-if-before-lent": false,
+	"used-if-after-pentecost": false,
+	"rogation-day": false,
+	"eve-of": null,
+	"sunday-before": null,
+
+	"eucharist": [{
+		"continuous": null,
+		"thematic": null,
+		"special": [{
+			"holy-saturday": [
+				{
+					"service": "At services other than the Easter Vigil",
+					"ot": "Job 14:1-14 or Lamentations 3:1-9, 19-24",
+					"psalm": "Psalm 31:1-4, 15-16",
+					"epistle": "1 Peter 4:1-8",
+					"gospel": "Matthew 27:57-66 or John 19:38-42"
+				},
+				{
+					"service": "Easter Vigil",
+					"rubric": "A minimum of three Old Testament readings (with their psalm or canticle) should be chosen. The reading from Exodus 14 should always be used. Psalm is used at the Gradual",
+					"ot": [
+						"Genesis 1:1-2:4a / Psalm 136:1-9, 23-26",
+						"Genesis 7:1-5,11-18; 8:6-18; 9:8-13 / Psalm 46",
+						"Genesis 22:1-18 / Psalm 16",
+						"Exodus 14:10-31; 15:20-21 / Canticle: Exodus 15:1b-13, 17-18",
+						"Isaiah 55:1-11 / Canticle: Isaiah 12:2-6",
+						"Baruch 3:9-15, 32 - 4:4 or Proverbs 8:1-8, 19-21; 9:4b-6 / Psalm 19",
+						"Ezekiel 36:24-28 / Psalms 42 and 43",
+						"Ezekiel 37:1-14 / Psalm 143",
+						"Zephaniah 3:14-20 / Psalm 98"
+					],
+					"epistle": "Romans 6:3-11",
+					"psalm": "Psalm 114",
+					"gospel": "Matthew 28:1-10"
+				}
+			]
+		}]
+	}],
+
+	"daily-prayer": [{
+		"morning": [{
+			"rubric": null,
+			"season": "The Suffering Christ ",
+			"ot": "Job 19:21-27a",
+			"nt": "Hebrews 4:1-16",
+			"gospel": null
+		}],
+		"evening": [{
+			"rubric": null,
+			"season": "The Suffering Christ ",
+			"ot": "Job 19:21-27a",
+			"nt": "Romans 8:1-11",
+			"gospel": null
+		}],
+		"both": null
+	}],
+
+	"alt-psalms": [{
+		"morning": "READING",
+		"evening": "READING"
+	}]
+},
+
+{
+	"year": "A",
+	"daily-year": 1,
+	"type": "sunday",
+
+	"week": "Week of Easter",
+	"fixed-date": null,
+	"day-of-week": "Sunday",
+	"day-name": "Easter Day",
+	"class": 1,
+	"colour": "White",
+
+	"spb-week": null,
+	"spb-colour": null,
+
+	"rubric": null,
+	"used-if-before-lent": false,
+	"used-if-after-pentecost": false,
+	"rogation-day": false,
+	"eve-of": null,
+	"sunday-before": null,
+
+	"eucharist": [{
+		"continuous": [{
+			"rubric": null,
+			"ot": "READING",
+			"psalm": "READING",
+			"epistle": "READING",
+			"gospel": "READING"
+		}],
+		"thematic": null,
+		"special": null
+	}],
+
+	"daily-prayer": [{
+		"morning": null,
+		"evening": null,
+		"both": [{
+			"rubric": null,
+			"season": "New Life: The Lord",
+			"ot": "Song of Solomon 3:2-5; 8:6-7",
+			"nt": "Revelation 1:12-18",
+			"gospel": "John 20:11-18"
+		}]
+	}],
+
+	"alt-psalms": [{
+		"morning": "Psalms 114 and 117",
+		"evening": "Psalm 66"
+	}]
+},
+
+{
+	"year" : "A",
+	"daily-year" : 1,
+	"type": "sunday",
+
+	"week" : "Week of Proper 34",
+	"fixed-date": null,	
+	"day-of-week" : "Sunday",
+	"day-name" : "The Last Sunday after Pentecost (Christ the King)",
+	"class" : 3,
+	"colour" : "White or Red",
+
+	"spb-week": null,
+	"spb-colour": null,
+
+	"rubric": null,
+	"used-if-before-lent": false,
+	"used-if-after-pentecost": false,
+	"rogation-day": false,
+	"eve-of": null,
+	"sunday-before" : "Sunday before Advent",
+
+	"eucharist": [{
+		"continuous": [{
+			"rubric": null,
+			"ot" : "Ezekiel 34:11-16, 20-24",
+			"psalm" : "Psalm 100",
+			"epistle" : "Ephesians 1:15-23",
+			"gospel" : "Matthew 25:31-46"
+		}],
+		"thematic": [{
+			"rubric": null,
+			"ot" : "Ezekiel 34:11-16, 20-24",
+			"psalm" : "Psalm 122",
+			"epistle" : "Ephesians 1:15-23",
+			"gospel" : "Matthew 25:31-46"
+		}]
+	}],
+
+	"daily-prayer" :
+	[{
+		"Season" : "Week",
+		"OT" : "2 Samuel 23:1-7 or 1 Maccabees 2:15-29",
+		"NT" : "Revelation 3:7-22",
+		"Gospel" : "Matthew 28:16-20"
+	}],
+
+	"alt-psalms" : 
+	[{
+		"morning" : "Psalm 29",
+		"evening" : "Psalm 110"
+	}]
+
+}]
+}

@@ -1,0 +1,681 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "year": "A",
+            "daily-year": 1,
+            "type": "BLANK",
+            "week": "LITURGICAL_WEEK",
+            "fixed-date": null,
+            "day-of-week": "Sunday|Monday|Tuesday|etc",
+            "day-name": "NAME",
+            "class": 1,
+            "colour": "COLOUR",
+            "spb-week": null,
+            "spb-colour": null,
+            "rubric": null,
+            "used-if-before-lent": false,
+            "used-if-after-pentecost": false,
+            "rogation-day": false,
+            "eve-of": null,
+            "sunday-before": null,
+            "eucharist": [
+                {
+                    "continuous": [
+                        {
+                            "rubric": null,
+                            "ot": "READING",
+                            "psalm": "READING",
+                            "epistle": "READING",
+                            "gospel": "READING"
+                        }
+                    ],
+                    "thematic": null,
+                    "special": null
+                }
+            ],
+            "daily-prayer": [
+                {
+                    "morning": null,
+                    "evening": null,
+                    "both": [
+                        {
+                            "rubric": null,
+                            "season": "SEASON",
+                            "ot": "READING",
+                            "nt": "READING",
+                            "gospel": "READING"
+                        }
+                    ]
+                }
+            ],
+            "alt-psalms": [
+                {
+                    "morning": "READING",
+                    "evening": "READING"
+                }
+            ]
+        }
+    ],
+    "required": [
+        "year",
+        "daily-year",
+        "type",
+        "week",
+        "fixed-date",
+        "day-of-week",
+        "day-name",
+        "class",
+        "colour",
+        "spb-week",
+        "spb-colour",
+        "rubric",
+        "used-if-before-lent",
+        "used-if-after-pentecost",
+        "rogation-day",
+        "eve-of",
+        "sunday-before",
+        "eucharist",
+        "daily-prayer",
+        "alt-psalms"
+    ],
+    "properties": {
+        "year": {
+            "$id": "#/properties/year",
+            "type": "string",
+            "title": "The year schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "A"
+            ]
+        },
+        "daily-year": {
+            "$id": "#/properties/daily-year",
+            "type": "integer",
+            "title": "The daily-year schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "type": {
+            "$id": "#/properties/type",
+            "type": "string",
+            "title": "The type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "BLANK"
+            ]
+        },
+        "week": {
+            "$id": "#/properties/week",
+            "type": "string",
+            "title": "The week schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "LITURGICAL_WEEK"
+            ]
+        },
+        "fixed-date": {
+            "$id": "#/properties/fixed-date",
+            "type": "null",
+            "title": "The fixed-date schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "day-of-week": {
+            "$id": "#/properties/day-of-week",
+            "type": "string",
+            "title": "The day-of-week schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Sunday|Monday|Tuesday|etc"
+            ]
+        },
+        "day-name": {
+            "$id": "#/properties/day-name",
+            "type": "string",
+            "title": "The day-name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "NAME"
+            ]
+        },
+        "class": {
+            "$id": "#/properties/class",
+            "type": "integer",
+            "title": "The class schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "colour": {
+            "$id": "#/properties/colour",
+            "type": "string",
+            "title": "The colour schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "COLOUR"
+            ]
+        },
+        "spb-week": {
+            "$id": "#/properties/spb-week",
+            "type": "null",
+            "title": "The spb-week schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "spb-colour": {
+            "$id": "#/properties/spb-colour",
+            "type": "null",
+            "title": "The spb-colour schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "rubric": {
+            "$id": "#/properties/rubric",
+            "type": "null",
+            "title": "The rubric schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "used-if-before-lent": {
+            "$id": "#/properties/used-if-before-lent",
+            "type": "boolean",
+            "title": "The used-if-before-lent schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "used-if-after-pentecost": {
+            "$id": "#/properties/used-if-after-pentecost",
+            "type": "boolean",
+            "title": "The used-if-after-pentecost schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "rogation-day": {
+            "$id": "#/properties/rogation-day",
+            "type": "boolean",
+            "title": "The rogation-day schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "eve-of": {
+            "$id": "#/properties/eve-of",
+            "type": "null",
+            "title": "The eve-of schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "sunday-before": {
+            "$id": "#/properties/sunday-before",
+            "type": "null",
+            "title": "The sunday-before schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "eucharist": {
+            "$id": "#/properties/eucharist",
+            "type": "array",
+            "title": "The eucharist schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "continuous": [
+                            {
+                                "rubric": null,
+                                "ot": "READING",
+                                "psalm": "READING",
+                                "epistle": "READING",
+                                "gospel": "READING"
+                            }
+                        ],
+                        "thematic": null,
+                        "special": null
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/eucharist/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/eucharist/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "continuous": [
+                                    {
+                                        "rubric": null,
+                                        "ot": "READING",
+                                        "psalm": "READING",
+                                        "epistle": "READING",
+                                        "gospel": "READING"
+                                    }
+                                ],
+                                "thematic": null,
+                                "special": null
+                            }
+                        ],
+                        "required": [
+                            "continuous",
+                            "thematic",
+                            "special"
+                        ],
+                        "properties": {
+                            "continuous": {
+                                "$id": "#/properties/eucharist/items/anyOf/0/properties/continuous",
+                                "type": "array",
+                                "title": "The continuous schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": [],
+                                "examples": [
+                                    [
+                                        {
+                                            "rubric": null,
+                                            "ot": "READING",
+                                            "psalm": "READING",
+                                            "epistle": "READING",
+                                            "gospel": "READING"
+                                        }
+                                    ]
+                                ],
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/eucharist/items/anyOf/0/properties/continuous/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/eucharist/items/anyOf/0/properties/continuous/items/anyOf/0",
+                                            "type": "object",
+                                            "title": "The first anyOf schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": {},
+                                            "examples": [
+                                                {
+                                                    "rubric": null,
+                                                    "ot": "READING",
+                                                    "psalm": "READING",
+                                                    "epistle": "READING",
+                                                    "gospel": "READING"
+                                                }
+                                            ],
+                                            "required": [
+                                                "rubric",
+                                                "ot",
+                                                "psalm",
+                                                "epistle",
+                                                "gospel"
+                                            ],
+                                            "properties": {
+                                                "rubric": {
+                                                    "$id": "#/properties/eucharist/items/anyOf/0/properties/continuous/items/anyOf/0/properties/rubric",
+                                                    "type": "null",
+                                                    "title": "The rubric schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": null,
+                                                    "examples": [
+                                                        null
+                                                    ]
+                                                },
+                                                "ot": {
+                                                    "$id": "#/properties/eucharist/items/anyOf/0/properties/continuous/items/anyOf/0/properties/ot",
+                                                    "type": "string",
+                                                    "title": "The ot schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "READING"
+                                                    ]
+                                                },
+                                                "psalm": {
+                                                    "$id": "#/properties/eucharist/items/anyOf/0/properties/continuous/items/anyOf/0/properties/psalm",
+                                                    "type": "string",
+                                                    "title": "The psalm schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "READING"
+                                                    ]
+                                                },
+                                                "epistle": {
+                                                    "$id": "#/properties/eucharist/items/anyOf/0/properties/continuous/items/anyOf/0/properties/epistle",
+                                                    "type": "string",
+                                                    "title": "The epistle schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "READING"
+                                                    ]
+                                                },
+                                                "gospel": {
+                                                    "$id": "#/properties/eucharist/items/anyOf/0/properties/continuous/items/anyOf/0/properties/gospel",
+                                                    "type": "string",
+                                                    "title": "The gospel schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "READING"
+                                                    ]
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            },
+                            "thematic": {
+                                "$id": "#/properties/eucharist/items/anyOf/0/properties/thematic",
+                                "type": "null",
+                                "title": "The thematic schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "special": {
+                                "$id": "#/properties/eucharist/items/anyOf/0/properties/special",
+                                "type": "null",
+                                "title": "The special schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        },
+        "daily-prayer": {
+            "$id": "#/properties/daily-prayer",
+            "type": "array",
+            "title": "The daily-prayer schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "morning": null,
+                        "evening": null,
+                        "both": [
+                            {
+                                "rubric": null,
+                                "season": "SEASON",
+                                "ot": "READING",
+                                "nt": "READING",
+                                "gospel": "READING"
+                            }
+                        ]
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/daily-prayer/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/daily-prayer/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "morning": null,
+                                "evening": null,
+                                "both": [
+                                    {
+                                        "rubric": null,
+                                        "season": "SEASON",
+                                        "ot": "READING",
+                                        "nt": "READING",
+                                        "gospel": "READING"
+                                    }
+                                ]
+                            }
+                        ],
+                        "required": [
+                            "morning",
+                            "evening",
+                            "both"
+                        ],
+                        "properties": {
+                            "morning": {
+                                "$id": "#/properties/daily-prayer/items/anyOf/0/properties/morning",
+                                "type": "null",
+                                "title": "The morning schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "evening": {
+                                "$id": "#/properties/daily-prayer/items/anyOf/0/properties/evening",
+                                "type": "null",
+                                "title": "The evening schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "both": {
+                                "$id": "#/properties/daily-prayer/items/anyOf/0/properties/both",
+                                "type": "array",
+                                "title": "The both schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": [],
+                                "examples": [
+                                    [
+                                        {
+                                            "rubric": null,
+                                            "season": "SEASON",
+                                            "ot": "READING",
+                                            "nt": "READING",
+                                            "gospel": "READING"
+                                        }
+                                    ]
+                                ],
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/daily-prayer/items/anyOf/0/properties/both/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/daily-prayer/items/anyOf/0/properties/both/items/anyOf/0",
+                                            "type": "object",
+                                            "title": "The first anyOf schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": {},
+                                            "examples": [
+                                                {
+                                                    "rubric": null,
+                                                    "season": "SEASON",
+                                                    "ot": "READING",
+                                                    "nt": "READING",
+                                                    "gospel": "READING"
+                                                }
+                                            ],
+                                            "required": [
+                                                "rubric",
+                                                "season",
+                                                "ot",
+                                                "nt",
+                                                "gospel"
+                                            ],
+                                            "properties": {
+                                                "rubric": {
+                                                    "$id": "#/properties/daily-prayer/items/anyOf/0/properties/both/items/anyOf/0/properties/rubric",
+                                                    "type": "null",
+                                                    "title": "The rubric schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": null,
+                                                    "examples": [
+                                                        null
+                                                    ]
+                                                },
+                                                "season": {
+                                                    "$id": "#/properties/daily-prayer/items/anyOf/0/properties/both/items/anyOf/0/properties/season",
+                                                    "type": "string",
+                                                    "title": "The season schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "SEASON"
+                                                    ]
+                                                },
+                                                "ot": {
+                                                    "$id": "#/properties/daily-prayer/items/anyOf/0/properties/both/items/anyOf/0/properties/ot",
+                                                    "type": "string",
+                                                    "title": "The ot schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "READING"
+                                                    ]
+                                                },
+                                                "nt": {
+                                                    "$id": "#/properties/daily-prayer/items/anyOf/0/properties/both/items/anyOf/0/properties/nt",
+                                                    "type": "string",
+                                                    "title": "The nt schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "READING"
+                                                    ]
+                                                },
+                                                "gospel": {
+                                                    "$id": "#/properties/daily-prayer/items/anyOf/0/properties/both/items/anyOf/0/properties/gospel",
+                                                    "type": "string",
+                                                    "title": "The gospel schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "READING"
+                                                    ]
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        },
+        "alt-psalms": {
+            "$id": "#/properties/alt-psalms",
+            "type": "array",
+            "title": "The alt-psalms schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "morning": "READING",
+                        "evening": "READING"
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/alt-psalms/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/alt-psalms/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "morning": "READING",
+                                "evening": "READING"
+                            }
+                        ],
+                        "required": [
+                            "morning",
+                            "evening"
+                        ],
+                        "properties": {
+                            "morning": {
+                                "$id": "#/properties/alt-psalms/items/anyOf/0/properties/morning",
+                                "type": "string",
+                                "title": "The morning schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "READING"
+                                ]
+                            },
+                            "evening": {
+                                "$id": "#/properties/alt-psalms/items/anyOf/0/properties/evening",
+                                "type": "string",
+                                "title": "The evening schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "READING"
+                                ]
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}
