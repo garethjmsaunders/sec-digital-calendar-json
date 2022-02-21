@@ -1,11 +1,6 @@
 {
-	"year" : "a",
-	"daily-year" : "1",	
-	"church-year" : "2021-2022", // do I need this?
-	"leap-year" : false, // do I need this?
-	"advent-1" : "2021-11-28",
-	// "ash-wednesday" : "2022-03-02", // this could be calculated from easter
-	"easter" : "2022-04-17",
-	// I will need to calculate lent and pentecost
-	// to work out which week of proper X to use
+	"sundayReadingsYear": "a",
+	"dailyReadingsYear": 1,	
+	"adventStart": "2021-11-28",
+	"lentStart": "2022-03-02"
 }
