@@ -1,8 +1,29 @@
-[
+{
+   "advent-1": {
+   	  "weekData": {
+   	  	"comment": "this won't work with every week, e.g. start of Lent",
+   	  	"weekName": "Week of Advent 1",
+         "colour": "Violet"
+   	  },
+      "sunday": {
+         "dayName": "First Sunday of Advent",
+         "class": 1,
+         "readings": {}
+      },
+      "monday": {
+         "dayName": "Monday after First Sunday of Advent",
+         "class": 0,
+      },
+      "tuesday": {
+         "dayName": "Tuesday after First Sunday of Advent",
+         "class": 0,
+      }
+   }
+},
+
 	{
 		"sundayReadingsYear": "A",
 		"dailyReadingsYear": 1,
-		"type": "BLANK ALTERNATIVE",
 
 		"week": "LITURGICAL_WEEK",
 		"fixedDate": null,
@@ -23,15 +44,13 @@
 		"sundayBefore": null,
 
 		"eucharist": [{
-			"continuous": [{
-				"rubric": null,
-				"ot": "READING",
-				"psalm": "READING",
-				"epistle": "READING",
-				"gospel": "READING"
-			}],
-			"thematic": null,
-			"special": null
+			"service": "Eucharist",
+			"readings": [
+				"OT",
+				"Psalm",	
+				"Epistle",
+				"Gospel"
+			]
 		}],
 
 		"dailyPrayer": [{
@@ -53,65 +72,12 @@
 	},
 
 	{
-		"year": "A",
-		"daily-year": 1,
-		"type": "BLANK",
-
-		"week": "LITURGICAL_WEEK",
-		"fixed-date": null,
-		"day-of-week": "Sunday|Monday|Tuesday|etc",
-		"day-name": "NAME",
-		"class": 1,
-		"colour": "COLOUR",
-
-		"spb-week": null,
-		"spb-colour": null,
-
-		"rubric": null,
-		"used-if-before-lent": false,
-		"used-if-after-pentecost": false,
-		"rogation-day": false,
-		"eve-of": null,
-		"sunday-before": null,
-
-		"eucharist": [{
-			"continuous": [{
-				"rubric": null,
-				"ot": "READING",
-				"psalm": "READING",
-				"epistle": "READING",
-				"gospel": "READING"
-			}],
-			"thematic": null,
-			"special": null
-		}],
-
-		"daily-prayer": [{
-			"morning": null,
-			"evening": null,
-			"both": [{
-				"rubric": null,
-				"season": "SEASON",
-				"ot": "READING",
-				"nt": "READING",
-				"gospel": "READING"
-			}]
-		}],
-
-		"alt-psalms": [{
-			"morning": "READING",
-			"evening": "READING"
-		}]
-	},
-
-	{
-		"year": "A",
-		"daily-year": 1,
-		"type": "sunday",
+		"sundayReadingsYear": "A",
+		"dailyReadingsYear": 1,
 
 		"week": "Week of Advent 1",
-		"fixed-date": null,
-		"day-of-week": "Sunday",
+		"fixedDate": null,
+		"dayOfWeek": "Sunday",
 		"day-name": "First Sunday of Advent",
 		"class": 1,
 		"colour": "Violet",
@@ -157,13 +123,12 @@
 	},
 
 	{
-		"year": "A",
-		"daily-year": 1,
-		"type": "weekday",
+		"sundayReadingsYear": "A",
+		"dailyReadingsYear": 1,
 
 		"week": "Week of Advent 1",
-		"fixed-date": null,
-		"day-of-week": "Monday",
+		"fixedDate": null,
+		"dayOfWeek": "Monday",
 		"day-name": "Monday after First Sunday of Advent",
 		"class": 0,
 		"colour": "Violet",
@@ -179,7 +144,7 @@
 		"sunday-before": null,
 
 		"eucharist": [{
-			"ot": "Isaiah 4:2-6",
+			"service": "Daily Eucharist",
 			"psalm": "Psalm 122",
 			"epistle": null,
 			"gospel": "Matthew 8:5-13"
@@ -202,13 +167,12 @@
 
 
 	{
-		"year": "A",
-		"daily-year": 1,
-		"type": "sunday",
+		"sundayReadingsYear": "A",
+		"dailyReadingsYear": 1,
 
 		"week": "Holy Week (Week of Lent 6)",
-		"fixed-date": null,
-		"day-of-week": "Sunday",
+		"fixedDate": null,
+		"dayOfWeek": "Sunday",
 		"day-name": "The Sunday of the Passion (Palm Sunday)",
 		"class": 1,
 		"colour": "Red or Violet",
@@ -224,30 +188,35 @@
 		"sunday-before": null,
 
 		"eucharist": [{
-			"continuous": [{
-				"rubric": null,
-				"ot": "",
-				"psalm": "",
-				"epistle": "",
-				"gospel": ""
-			}],
-			"thematic": null,
-			"special": [{
-				"palm-sunday": [
-					{
-						"service": "Liturgy of the Palms",
-						"gospel": "Matthew 21:1-11",
-						"psalm": "Psalm 118:1-2, 19-29"
-					},
-					{
-						"service": "Liturgy of the Passion",
-						"ot": "Isaiah 50:4-9a",
-						"psalm": "Psalm 31:9-16",
-						"epistle": "Philippians 2:5-11",
-						"gospel": "Matthew 26:14 - 27:66 or Matthew 27:11-54"
-					}
-				]
-			}]
+			"service": "Liturgy of the Palms",
+			"psalm": "Psalm 118:1-2, 19-29"
+		},
+		{
+			"service": "Liturgy of the Passion",
+			"psalm": "Psalm 31:9-16",
+			"epistle": "Philippians 2:5-11",
+			"gospel": "Matthew 26:14 - 27:66 or Matthew 27:11-54"
+		}],
+
+
+		// OR
+
+
+		"eucharist": [{
+			"service": "Liturgy of the Palms",
+			"readings": [
+				"Matthew 21:1-11",
+				"Psalm 118:1-2, 19-29"
+			]
+		},
+		{
+			"service": "Liturgy of the Passion",
+			"readings": [			
+				"Isaiah 50:4-9a",
+				"Psalm 31:9-16",
+				"Philippians 2:5-11",
+				"Matthew 26:14 - 27:66 or Matthew 27:11-54"
+			]
 		}],
 
 		"daily-prayer": [{
@@ -268,17 +237,33 @@
 			"both": null
 		}],
 
-		"alt-psalms": null
-	},
+		// OR
+
+		"dailyPrayer": [{
+			"service": "Morning Prayer",
+			"season": "The Suffering Christ ",
+			"readings": [
+				"Zechariah 9:9-12",
+				"1 Timothy 6:12-16"
+			]
+		},
+		{
+			"service": "Evening Prayer",
+			"season": "The Suffering Christ ",
+			"readings": [
+				"Zechariah 12:9-11; 13:1, 7-9",
+				"Matthew 21:12-17"
+			]
+		}],
+},
 
 	{
-		"year": "A",
-		"daily-year": 1,
-		"type": "weekday",
+		"sundayReadingsYear": "A",
+		"dailyReadingsYear": 1,
 
 		"week": "Holy Week (Week of Lent 6)",
-		"fixed-date": null,
-		"day-of-week": "Friday",
+		"fixedDate": null,
+		"dayOfWeek": "Friday",
 		"day-name": "Good Friday",
 		"class": 1,
 		"colour": "Red for the Liturgy; Hangings removed",
@@ -294,42 +279,42 @@
 		"sunday-before": null,
 
 		"eucharist": [{
-			"rubric": "Holy Communion",
-			"ot": "Isaiah 52:13 - 53:12",
-			"psalm": "Psalm 22",
-			"epistle": "Hebrews 10:16-25 or Hebrews 4:14-16; 5:7-9",
-			"gospel": "John 18:1 - 19:42"
+			"service": "Holy Communion",
+			"readings": [
+				"Isaiah 52:13 - 53:12",
+				"Psalm 22",
+				"Hebrews 10:16-25 or Hebrews 4:14-16; 5:7-9",
+				"John 18:1 - 19:42"	
+			]
 		}],
 
 		"daily-prayer": [{
-			"morning": [{
-				"rubric": null,
-				"season": "The Suffering Christ ",
-				"ot": "Wisdom of Solomon 1:16 - 2:1, 12-22 or Genesis 22:1-14",
-				"nt": "1 Peter 1:10-20",
-				"gospel": "John 13:36-38"
-			}],
-			"evening": [{
-				"rubric": null,
-				"season": "The Suffering Christ ",
-				"ot": "Wisdom of Solomon 1:16 - 2:1, 12-22 or Genesis 22:1-14",
-				"nt": "1 Peter 1:10-20",
-				"gospel": "John 19:38-42"
-			}],
-			"both": null
+			"service": "Morning Prayer",
+			"season": "The Suffering Christ ",
+			"readings": [
+				"Wisdom of Solomon 1:16 - 2:1, 12-22 or Genesis 22:1-14",
+				"1 Peter 1:10-20",
+				"John 13:36-38"				
+			]
+		},
+		{
+			"service": "Evening Prayer",
+			"season": "The Suffering Christ ",
+			"readings": [
+				"Wisdom of Solomon 1:16 - 2:1, 12-22 or Genesis 22:1-14",
+				"1 Peter 1:10-20",
+				"John 19:38-42"				
+			]
 		}],
-
-		"alt-psalms": null
 	},
 
 	{
-		"year": "A",
-		"daily-year": 1,
-		"type": "weekday",
+		"sundayReadingsYear": "A",
+		"dailyReadingsYear": 1,
 
 		"week": "Holy Week (Week of Lent 6)",
-		"fixed-date": null,
-		"day-of-week": "Saturday",
+		"fixedDate": null,
+		"dayOfWeek": "Saturday",
 		"day-name": "Holy Saturday (Easter Eve)",
 		"class": 1,
 		"colour": "Hangings removed; White at the Easter Vigil",
@@ -345,71 +330,57 @@
 		"sunday-before": null,
 
 		"eucharist": [{
-			"continuous": null,
-			"thematic": null,
-			"special": [{
-				"holy-saturday": [
-					{
-						"service": "At services other than the Easter Vigil",
-						"ot": "Job 14:1-14 or Lamentations 3:1-9, 19-24",
-						"psalm": "Psalm 31:1-4, 15-16",
-						"epistle": "1 Peter 4:1-8",
-						"gospel": "Matthew 27:57-66 or John 19:38-42"
-					},
-					{
-						"service": "Easter Vigil",
-						"rubric": "A minimum of three Old Testament readings (with their psalm or canticle) should be chosen. The reading from Exodus 14 should always be used. Psalm is used at the Gradual",
-						"ot": [
-							"Genesis 1:1-2:4a / Psalm 136:1-9, 23-26",
-							"Genesis 7:1-5,11-18; 8:6-18; 9:8-13 / Psalm 46",
-							"Genesis 22:1-18 / Psalm 16",
-							"Exodus 14:10-31; 15:20-21 / Canticle: Exodus 15:1b-13, 17-18",
-							"Isaiah 55:1-11 / Canticle: Isaiah 12:2-6",
-							"Baruch 3:9-15, 32 - 4:4 or Proverbs 8:1-8, 19-21; 9:4b-6 / Psalm 19",
-							"Ezekiel 36:24-28 / Psalms 42 and 43",
-							"Ezekiel 37:1-14 / Psalm 143",
-							"Zephaniah 3:14-20 / Psalm 98"
-						],
-						"epistle": "Romans 6:3-11",
-						"psalm": "Psalm 114",
-						"gospel": "Matthew 28:1-10"
-					}
-				]
-			}]
+			"service": "At services other than the Easter Vigil",
+			"readings": [
+				"Job 14:1-14 or Lamentations 3:1-9, 19-24",
+				"Psalm 31:1-4, 15-16",
+				"1 Peter 4:1-8",
+				"Matthew 27:57-66 or John 19:38-42"
+			]
+		},
+		{
+			"service": "Easter Vigil",
+			"readings": [
+				"Genesis 1:1-2:4a / Psalm 136:1-9, 23-26",
+				"Genesis 7:1-5,11-18; 8:6-18; 9:8-13 / Psalm 46",
+				"Genesis 22:1-18 / Psalm 16",
+				"Exodus 14:10-31; 15:20-21 / Canticle: Exodus 15:1b-13, 17-18",
+				"Isaiah 55:1-11 / Canticle: Isaiah 12:2-6",
+				"Baruch 3:9-15, 32 - 4:4 or Proverbs 8:1-8, 19-21; 9:4b-6 / Psalm 19",
+				"Ezekiel 36:24-28 / Psalms 42 and 43",
+				"Ezekiel 37:1-14 / Psalm 143",
+				"Zephaniah 3:14-20 / Psalm 98",
+				"Romans 6:3-11",
+				"Psalm 114",
+				"Matthew 28:1-10"
+			]
 		}],
 
-		"daily-prayer": [{
-			"morning": [{
-				"rubric": null,
-				"season": "The Suffering Christ ",
-				"ot": "Job 19:21-27a",
-				"nt": "Hebrews 4:1-16",
-				"gospel": null
-			}],
-			"evening": [{
-				"rubric": null,
-				"season": "The Suffering Christ ",
-				"ot": "Job 19:21-27a",
-				"nt": "Romans 8:1-11",
-				"gospel": null
-			}],
-			"both": null
-		}],
-
-		"alt-psalms": [{
-			"morning": "READING",
-			"evening": "READING"
+		"dailyPrayer": [{
+			"service": "Morning Prayer",
+			"season": "The Suffering Christ ",
+			"readings": [
+				"Job 19:21-27a",
+				"Hebrews 4:1-16"
+			]
+		},
+		{
+			"service": "Evening Prayer",
+			"season": "The Suffering Christ ",
+			"readings": [
+				"Job 19:21-27a",
+				"Romans 8:1-11"
+			]
 		}]
 	},
 
 	{
-		"year": "A",
-		"daily-year": 1,
-		"type": "sunday",
+		"sundayReadingsYear": "A",
+		"dailyReadingsYear": 1,
 
 		"week": "Week of Easter",
-		"fixed-date": null,
-		"day-of-week": "Sunday",
+		"fixedDate": null,
+		"dayOfWeek": "Sunday",
 		"day-name": "Easter Day",
 		"class": 1,
 		"colour": "White",
@@ -455,13 +426,12 @@
 	},
 
 	{
-		"year" : "A",
-		"daily-year" : 1,
-		"type": "sunday",
+		"sundayReadingsYear" : "a",
+		"dailyReadingsYear" : 1,
 
 		"week" : "Week of Proper 34",
-		"fixed-date": null,	
-		"day-of-week" : "Sunday",
+		"fixedDate": null,	
+		"dayOfWeek" : "Sunday",
 		"day-name" : "The Last Sunday after Pentecost (Christ the King)",
 		"class" : 3,
 		"colour" : "White or Red",
@@ -476,36 +446,56 @@
 		"eve-of": null,
 		"sunday-before" : "Sunday before Advent",
 
-		"eucharist": [{
-			"continuous": [{
-				"rubric": null,
-				"ot" : "Ezekiel 34:11-16, 20-24",
-				"psalm" : "Psalm 100",
-				"epistle" : "Ephesians 1:15-23",
-				"gospel" : "Matthew 25:31-46"
+		"eucharist": {
+			"service": "Eucharist",
+			"readings": [{
+				"theme": "Continuous",
+				"readings": [
+					"Ezekiel 34:11-16, 20-24",
+					"Psalm 100",
+					"Ephesians 1:15-23",
+					"Matthew 25:31-46"						
+				]
+			},
+			{
+				"theme": "Thematic",
+				"readings": [
+					"Ezekiel 34:11-16, 20-24",
+					"Psalm 122",
+					"Ephesians 1:15-23",
+					"Matthew 25:31-46"
+				]
 			}],
-			"thematic": [{
-				"rubric": null,
-				"ot" : "Ezekiel 34:11-16, 20-24",
-				"psalm" : "Psalm 122",
-				"epistle" : "Ephesians 1:15-23",
-				"gospel" : "Matthew 25:31-46"
-			}]
-		}],
 
-		"daily-prayer" :
-		[{
-			"Season" : "Week",
-			"OT" : "2 Samuel 23:1-7 or 1 Maccabees 2:15-29",
-			"NT" : "Revelation 3:7-22",
-			"Gospel" : "Matthew 28:16-20"
-		}],
+		"dailyPrayer": {
+			"season" : "automatic",
+			"readings": [
+				"2 Samuel 23:1-7 or 1 Maccabees 2:15-29",
+				"Revelation 3:7-22",
+				"Matthew 28:16-20"
+			]
+		},
 
-		"alt-psalms" : 
-		[{
-			"morning" : "Psalm 29",
-			"evening" : "Psalm 110"
-		}]
+		"altPsalms": {
+			"morning": "Psalm 29",
+			"evening": "Psalm 110"
+		}
 
 	}
-]
+}
+
+{
+Advent
+Christmas
+Epiphany
+Lent
+Passiontide
+Holy Week
+Easter
+Pentecost
+Creation
+Pentecost
+}
+
+
+

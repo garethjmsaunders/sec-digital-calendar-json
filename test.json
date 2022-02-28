@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+[
+	{
+		"sundayReadingsYear": "a",
+		"dailyReadingsYear": 1,
+		"season": "advent",
+		"seasonWeek": "advent 1",
+		"sundayOrWeek": "sunday",
+
+		"week": "LITURGICAL_WEEK",
+		"fixedDate": null,
+		"dayOfWeek": "Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday",
+		"feastName": "NAME",
+		"class": 1,
+		"colour": "COLOUR",
+
+		"spbWeek": null,
+		"spbColour": null,
+
+		"rubric": null,
+		"ifBeforeLent": false,
+		"ifAfterPentecost": false,
+		"rogationDay": false,
+		"emberDay": false,
+		"eveOf": null,
+		"sundayBefore": null,
+
+		"eucharist": [{
+			"continuous": [{
+				"rubric": null,
+				"ot": "READING",
+				"psalm": "READING",
+				"epistle": "READING",
+				"gospel": "READING"
+			}],
+			"thematic": null,
+			"special": null
+		}]
